@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f0ebe6;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("https://fonts.googleapis.com/css2?family=Montserrat") format("woff2"),
+    url("https://fonts.googleapis.com/css2?family=Montserrat")
+      format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+html {
+  font-family: "Montserrat", Fallback, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.page {
+  width: 100%;
+  line-height: 1.2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100vh auto 100px auto;
+  grid-template-areas:
+    "h h h"
+    "c c c"
+    "f f f";
+}
+
+.section {
+  grid-area: h;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  min-height: 100vh;
+  justify-content: inherit;
+  align-items: inherit;
+  background-image: url(./Mano.jpg);
+  background-size: 35em;
+  background-color: rgba(0, 0, 0);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.social {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.flexheader {
+  position: relative;
+  top: 2em;
+  right: 2em;
+  margin-left: 1.5em;
+}
+
+.ordina {
+  margin-left: 3em;
+  padding: 0.7em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  border: 1px solid var(--white);
+  font-weight: 800;
+}
+
+.ordina:hover {
+  color: #ffc300 !important;
+  border: 1px solid #ffc300;
+}
+
+.fab {
+  padding: 1.2em;
+  font-size: 2em;
+  margin: 5px 2px;
+  color: var(--white);
+}
+
+.insta {
+  color: var(--white);
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.logo img {
+  width: 50%;
+  padding-left: 0%;
+}
+
+.buttons {
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-size: 0.7em;
+  font-weight: 500;
+  color: var(--white);
+  border-color: inherit;
+  line-height: 3em;
+  padding-right: 20%;
+  white-space: nowrap;
+}
+
+.button {
+  display: block;
+  background-color: transparent;
+  text-align: center;
+  border: 2px solid;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-bottom: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  color: #302d2c;
+}
+
+a:visited {
+  color: var(--white);
+}
+
+a:visited:hover {
+  color: #302d2c;
+}
+
+.button:hover {
+  background-color: var(--white);
+  color: #302d2c;
+}
+
+.Storia {
+  grid-area: c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  width: 100%;
+}
+
+.Descrizione {
+  padding-top: 2em;
+  flex: 1;
+  align-self: center;
+  text-align: center;
+}
+
+.Descrizione > p {
+  font-family: "Calligraffitti", serif;
+  align-self: center;
+  overflow: hidden;
+  text-align: justify;
+  padding: 2em;
+}
+
+.placeholder {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 3em;
+  padding-top: 3em;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.pizza {
+  display: block;
+  width: 60%;
+}
+
+.avatar {
+  width: 20%;
+  float: right;
+  border-radius: 5%;
+  margin-right: 2em;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.left {
+  float: left;
+  margin-right: 0px;
+  margin-left: 2em;
+}
+
+.pad {
+  margin-bottom: 2em;
+}
+
+.enzo {
+  display: block;
+  margin: 5% auto auto 5%;
+  width: 90%;
+}
+
+.locale {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.padded {
+  margin: 50px 10% 10% 10%;
+}
+
+.padded > h1 {
+  padding-top: -10%;
+  padding-bottom: 5%;
+}
+
+.more {
+  padding: 0.7em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  border: 1px solid var(--white);
+}
+
+#piu {
+  display: none;
+}
+
+#mostra {
+  border: 1px solid #302d2c;
+  padding: 0.7em;
+}
+.Asporto {
+  padding-top: 2em;
+  flex: 1;
+  align-self: center;
+  text-align: center;
+}
+
+.Asporto > p {
+  font-family: "Calligraffitti", serif;
+  font-size: 1.3em;
+  align-self: center;
+  overflow: hidden;
+  text-align: justify;
+  padding: 1.5em;
+}
+
+.Asporto a {
+  color: black;
+}
+
+.Asporto a:hover {
+  text-decoration: underline;
+}
+
+.Asporto > h1 {
+  padding-bottom: 2em;
+}
+
+.Asporto > h2 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  float: left;
+}
+
+.servizio {
+  width: 10%;
+  float: left;
+}
+
+.mappa {
+  width: 70%;
+  border-radius: 5%;
+  margin-bottom: 2em;
+  margin-right: 12em;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #302d2c;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  width: 23%;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.footer {
+  color: var(--white);
+  grid-area: f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #302d2c;
+}
+.footer img {
+  padding-left: 2em;
+  align-self: center;
+  height: 50%;
+}
+
+.footer > p {
+  padding-left: 2.5em;
+  align-self: center;
+}
+
+.footer .fab {
+  align-self: center;
+  padding-bottom: 1em;
+  font-size: 2em;
+  color: var(--white);
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+  .page {
+    line-height: 1.3;
+  }
+
+  .header {
+    background-size: 31em;
+    background-position: top;
+  }
+
+  .logo img {
+    width: 90%;
+  }
+
+  .pizza {
+    width: 90%;
+  }
+  .Storia {
+    flex-direction: column;
+  }
+
+  .Asporto > h1 {
+    padding-bottom: 1em;
+    float: none;
+  }
+
+  .Asporto > h2 {
+    float: none;
+  }
+
+  .servizio {
+    width: 20%;
+    padding-left: 1em;
+  }
+
+  .mappa {
+    width: 90%;
+    float: none;
+    margin-right: 0px;
+  }
+
+  .footerdiv {
+    height: 3em;
+  }
+
+  .footer > .fab {
+    align-self: center;
+    font-size: 2em;
+    margin-right: -1em;
+    color: var(--white);
+  }
+
+  .flexheader {
+    display: none;
+  }
+  .ordina2 {
+    font-weight: 800;
+  }
+
+  .padded {
+    width: 90%;
+  }
+  .av {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .avatar {
+    display: block;
+    float: none;
+    margin: 5% auto 5px auto;
+    border-radius: 5%;
+    width: 40%;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+  .page {
+    line-height: 1.3;
+  }
+  .enzo {
+    display: none;
+  }
+  .insta {
+    width: 20%;
+    top: 50px;
+    left: 10px;
+  }
+  .placeholder {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .Asporto > h2 {
+    float: none;
+  }
+  .Aporto > p {
+    margin-right: auto;
+  }
+  .servizio {
+    margin-left: 1em;
+  }
+  .mappa {
+    width: 80%;
+    margin-left: 10%;
+    float: none;
+    margin-right: 10%;
+  }
+  .av,
+  .footerdiv {
+    display: none;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .enzo {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .insta {
+    width: 20%;
+    top: 5px;
+    left: 10px;
+  }
+  .footerdiv,
+  .desktop {
+    display: none;
+  }
+  .Asporto > h1 {
+    margin-left: calc(10% - 45%);
+    -moz-margin-left: calc(10% - 45%);
+    -webkit-margin-left: calc(10% - 45%);
+  }
+}
