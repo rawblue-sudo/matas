@@ -67,8 +67,8 @@
         </div>
       </header>
       <nuxt />
-      <BottomBar />
     </div>
+    <BottomBar />
   </div>
 </template>
 
