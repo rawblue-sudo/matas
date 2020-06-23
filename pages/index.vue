@@ -154,7 +154,7 @@ export default {
   head() {
     return {
       title: 'Matas 54 - Pizza & Tagliere',
-      meta: [{ hid: 'yo', name: 'app', content: 'about matas' }]
+      meta: [{ hid: 'hello', name: 'Matas', content: 'about matas' }]
     }
   }
 }
