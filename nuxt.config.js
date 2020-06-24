@@ -7,10 +7,11 @@ export default {
     htmlAttrs: {
       lang: 'it'
     },
+    titleTemplate: '%s | Matas 54 - Pizza & Tagliere',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { template: '%s | Matas 54 - Pizza & Tagliere' }
+      { hid: 'description', name: 'description', content: 'meta description' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },

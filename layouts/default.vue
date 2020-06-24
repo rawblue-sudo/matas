@@ -20,7 +20,9 @@
         rel="noopener"
         >Menu</a
       >
-      <nuxt-link to="/team.html#team" class="active">Team</nuxt-link>
+      <nuxt-link :to="{ path: 'team', hash: '#team' }" class="active"
+        >Team</nuxt-link
+      >
       <nuxt-link to="/asporto.html">Asporto</nuxt-link>
     </div>
 
